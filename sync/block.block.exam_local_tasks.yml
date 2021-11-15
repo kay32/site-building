@@ -1,0 +1,33 @@
+uuid: eaaea7f3-6be0-4134-a619-369b1838e1d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - mobile_detect
+    - system
+  theme:
+    - exam
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: exam_local_tasks
+theme: exam
+region: content
+weight: -10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    pages: ''
+    negate: true
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    devices: {  }
+    negate: null

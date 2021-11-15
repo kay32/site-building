@@ -1,0 +1,30 @@
+.block-search {
+  padding: 0 1rem;
+
+  .form-row {
+    max-width: 210px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+  }
+
+  .form-group {
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-submit {
+    color: $theme-light-gray;
+    font-size: 14px;
+    width: 38px;
+    height: 38px;
+    background-color: transparent;
+    border-radius: 0;
+    border-color: $theme-light-gray;
+  }
+
+  .form-control {
+    border-radius: 0;
+    border-right-width: 0;
+    border-color: $theme-light-gray;
+  }
+}

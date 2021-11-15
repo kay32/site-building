@@ -1,0 +1,32 @@
+uuid: 1305910f-779d-4acb-a18f-ed8929dc1121
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - block_class
+    - mobile_detect
+    - views
+  theme:
+    - exam
+third_party_settings:
+  block_class:
+    classes: block-search
+id: exposedformsearchpage_1
+theme: exam
+region: primary_menu
+weight: -10
+provider: null
+plugin: 'views_exposed_filter_block:search-page_1'
+settings:
+  id: 'views_exposed_filter_block:search-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    devices: {  }
+    negate: null

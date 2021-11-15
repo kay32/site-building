@@ -1,0 +1,32 @@
+.menu--main {
+  .navbar-nav {
+    column-gap: 1rem;
+    height: 100%;
+
+    .nav-item:first-child .nav-link {
+      color: transparent;
+      overflow: hidden;
+      width: 28px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../images/homepage-menu.png");
+    }
+
+    .nav-link {
+      margin: 0;
+      padding: 8px 0 5px 0;
+      text-transform: uppercase;
+      border-bottom: transparent solid 3px;
+      transition: border-bottom-color 200ms ease;
+
+      &.active, &:hover {
+        border-bottom-color: $primary;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 46px 0 39px 0;
+        border-bottom: transparent solid 7px;
+      }
+    }
+  }
+}

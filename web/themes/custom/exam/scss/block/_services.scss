@@ -1,0 +1,53 @@
+.block-services {
+  text-align: center;
+  text-transform: uppercase;
+
+  .slick-slider {
+    padding-bottom: 20px;
+  }
+
+  .slick-track {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .views-field-field-media-image {
+    margin-bottom: 40px;
+
+    img {
+      margin: 0 auto;
+      width: 120px;
+      height: 120px;
+      object-fit: scale-down;
+      object-position: top;
+    }
+  }
+
+  .views-field-title {
+    margin-bottom: 20px;
+  }
+
+  .views-field-body {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: $color-services-text;
+  }
+
+  .views-field-view-node .field-content {
+    display: block;
+
+    a {
+      display: inline-block;
+      color: $white;
+      padding: 5px 10px;
+      background-color: $primary;
+      transition: background-color 200ms ease;
+
+      &:hover {
+        text-decoration: none;
+        background-color: $primary-dark;
+      }
+    }
+  }
+
+}

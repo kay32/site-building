@@ -1,0 +1,15 @@
+uuid: 78ac8201-1dae-422c-909a-3e43d03b5803
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.likes
+  module:
+    - flag
+id: flag_action.likes_flag
+label: 'Flag this item'
+type: user
+plugin: 'flag_action:likes_flag'
+configuration:
+  flag_id: likes
+  flag_action: flag

@@ -1,0 +1,33 @@
+uuid: c5c28d9d-1d2c-449e-becc-2f9f8dae9ccc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - exam
+third_party_settings:
+  block_class:
+    classes: block-news
+id: views_block__news_block_1
+theme: exam
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: '2'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

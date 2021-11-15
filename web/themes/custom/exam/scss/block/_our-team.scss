@@ -1,0 +1,78 @@
+.block-our-team {
+  text-align: center;
+  text-transform: uppercase;
+
+  .slick-track {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .slick-slider {
+    padding-bottom: 20px;
+  }
+}
+
+.user--compact {
+  .field--name-user-picture {
+    margin-bottom: 1rem;
+
+    img {
+      margin: 0 auto;
+      width: 290px;
+      height: 290px;
+      object-fit: scale-down;
+      object-position: top;
+    }
+  }
+
+  &__name {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  &__position {
+    margin-bottom: 20px;
+    color: $theme-light-gray;
+    font-size: 12px;
+  }
+
+  &__link {
+    margin-bottom: 20px;
+
+    a {
+      display: inline-block;
+      color: $white;
+      font-size: 16px;
+      padding: 5px 10px;
+      background-color: $primary-dark;
+      transition: background-color 200ms ease;
+
+      &:hover {
+        text-decoration: none;
+        background-color: $primary;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .social-media-links--platforms.horizontal {
+    display: flex;
+  }
+}
+
+.flag-likes {
+  a {
+    color: $theme-light-gray;
+  }
+  &.action-flag a {
+    color: $primary;
+  }
+  .js-flag-message, .ajax-progress-throbber {
+    display: none;
+  }
+}

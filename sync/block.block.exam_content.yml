@@ -1,0 +1,26 @@
+uuid: 83f98fff-706d-4eb7-bbd5-c1cba13ef24f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - exam
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: exam_content
+theme: exam
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true

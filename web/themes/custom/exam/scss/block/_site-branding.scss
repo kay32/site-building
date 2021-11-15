@@ -1,0 +1,46 @@
+.site-branding {
+  padding: 10px;
+  max-width: 240px;
+  background-color: $primary-dark;
+  text-align: center;
+
+  &__link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__logo {
+    height: 2em;
+    width: auto;
+  }
+
+  &__name {
+    color: $brand-primary;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__slogan {
+    display: none;
+    color: $brand-secondary;
+    font-weight: 300;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 20px;
+    &__name {
+      font-size: 2em;
+      font-weight: normal;
+      text-transform: none;
+    }
+    &__slogan {
+      display: block;
+    }
+  }
+}

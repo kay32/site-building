@@ -1,0 +1,34 @@
+uuid: b6369806-4320-4281-a9dc-0c5a9837a450
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:72620a6a-097f-45d8-85a0-ab1972a41ed2'
+  module:
+    - block_class
+    - block_content
+    - mobile_detect
+  theme:
+    - exam
+third_party_settings:
+  block_class:
+    classes: block-slogan
+id: banner
+theme: exam
+region: secondary_menu
+weight: -11
+provider: null
+plugin: 'block_content:72620a6a-097f-45d8-85a0-ab1972a41ed2'
+settings:
+  id: 'block_content:72620a6a-097f-45d8-85a0-ab1972a41ed2'
+  label: 'Block slogan'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    devices: {  }
+    negate: null

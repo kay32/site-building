@@ -1,0 +1,15 @@
+uuid: 7a282d87-0b6e-4d94-8eca-a59e574eb396
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.likes
+  module:
+    - flag
+id: flag_action.likes_unflag
+label: 'Unflag this item'
+type: user
+plugin: 'flag_action:likes_unflag'
+configuration:
+  flag_id: likes
+  flag_action: unflag

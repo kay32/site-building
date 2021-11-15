@@ -1,0 +1,22 @@
+uuid: a4c880f4-80cb-41a7-8b0d-4144e6f2c589
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - exam
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: exam_breadcrumbs
+theme: exam
+region: breadcrumb
+weight: -11
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

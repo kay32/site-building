@@ -1,0 +1,129 @@
+uuid: 3441aa3a-bc42-42d2-be1a-00e3387e40ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - exam
+id: socialmedialinks
+theme: exam
+region: primary_menu
+weight: -4
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    facebook:
+      value: test
+      description: ''
+      weight: '-34'
+    twitter:
+      value: test
+      description: ''
+      weight: '-33'
+    linkedin:
+      value: test
+      description: ''
+      weight: '-32'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-31'
+    email:
+      value: ''
+      description: ''
+      weight: '-30'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-29'
+    xing:
+      value: ''
+      description: ''
+      weight: '-28'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-27'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-26'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-25'
+    rss:
+      value: ''
+      description: ''
+      weight: '-24'
+    contact:
+      value: ''
+      description: ''
+      weight: '-23'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-22'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-21'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '-20'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-19'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-18'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-17'
+    instagram:
+      value: ''
+      description: ''
+      weight: '-16'
+    website:
+      value: ''
+      description: ''
+      weight: '-15'
+    behance:
+      value: ''
+      description: ''
+      weight: '-14'
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '-13'
+    github:
+      value: ''
+      description: ''
+      weight: '-12'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-11'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:fw'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

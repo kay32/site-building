@@ -1,0 +1,138 @@
+/* IMPORTS
+-------------------------------------------------*/
+
+@import "variables";
+@import "typography";
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "../../contrib/bootstrap_barrio/scss/barrio";
+@import "mixins";
+
+@import "header";
+@import "form-contact";
+@import "block/site-branding";
+@import "block/social-media-links";
+@import "block/banner";
+@import "block/services";
+@import "block/about";
+@import "block/projects";
+@import "block/our-team";
+@import "block/news";
+@import "block/search";
+@import "block/menu--main";
+@import "block/clients";
+
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+#page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#main-wrapper {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 70px;
+  }
+}
+
+#content > section > .block {
+  margin-bottom: 20px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 70px;
+  }
+}
+
+.block {
+  &__title-wrapper {
+    margin: 0;
+    padding: 25px 0;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #cdcdcd;
+    }
+  }
+
+  &__title-text {
+    padding: 0 20px;
+    background-color: $white;
+  }
+}
+
+.block-page-title-block {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 55px;
+    height: 4px;
+    background-color: $color-title-underscore;
+  }
+}
+
+.item-list > ol > li {
+  border-bottom: $theme-light-gray solid 1px;
+  margin-bottom: 20px;
+
+  &::marker {
+    color: $theme-light-gray;
+  }
+
+  .views-field-title, .views-field-name {
+    text-transform: uppercase;
+  }
+}
+
+/* COLORS
+--------------------------------------------------*/
+
+a {
+  color: $accent-shade;
+}
+
+.bg-inverse {
+  background: $primary-shade !important;
+}
+
+.site-footer {
+  background: $primary-dark;
+}
+
+.card-group img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.card-group .field--type-image {
+  margin: 0
+}

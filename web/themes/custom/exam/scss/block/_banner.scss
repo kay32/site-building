@@ -1,0 +1,35 @@
+.block-banner {
+  margin: 20px 0;
+  max-width: 350px;
+  overflow: hidden;
+  text-transform: uppercase;
+
+  &__title-primary {
+    margin: 0;
+    font-size: 32px;
+    color: $white;
+  }
+
+  &__title-secondary {
+    margin: 0;
+    font-size: 24px;
+    color: $black;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 12px;
+    color: $primary
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-top: 150px;
+    margin-left: 100px;
+    &__title-primary {
+      font-size: 60px;
+    }
+    &__title-secondary {
+      font-size: 36px;
+    }
+  }
+}

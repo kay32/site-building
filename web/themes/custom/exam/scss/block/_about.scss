@@ -1,0 +1,37 @@
+.block-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+  padding: 20px 0;
+  border-top: $primary-dark solid 5px;
+  border-bottom: $primary solid 5px;
+  text-transform: uppercase;
+
+  > * {
+    margin: 0;
+  }
+
+  &__text {
+    color: $theme-light-gray;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__link {
+    text-align: center;
+    display: block;
+    padding: 5px 10px;
+    color: $white;
+    font-size: 14px;
+    background-color: $primary;
+    transition: background-color 200ms ease;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+      background-color: $primary-dark;
+    }
+  }
+}

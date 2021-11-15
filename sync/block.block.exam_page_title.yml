@@ -1,0 +1,31 @@
+uuid: deecab71-3b76-43df-b7c9-acceb0f744c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - mobile_detect
+    - system
+  theme:
+    - exam
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: exam_page_title
+theme: exam
+region: content
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    devices: {  }
+    negate: null

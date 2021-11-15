@@ -1,0 +1,30 @@
+uuid: c60a8c8d-2e49-4ce5-a3d8-71c9a3a4098e
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: likes
+label: Likes
+bundles: {  }
+entity_type: user
+global: false
+weight: 0
+flag_short: 'Flag this item'
+flag_long: ''
+flag_message: ''
+unflag_short: 'Unflag this item'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:user'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+  show_on_profile: true
+linkTypeConfig: {  }

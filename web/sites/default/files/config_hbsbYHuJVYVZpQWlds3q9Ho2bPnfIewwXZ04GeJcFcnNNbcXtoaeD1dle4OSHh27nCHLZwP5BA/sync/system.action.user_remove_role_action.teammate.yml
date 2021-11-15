@@ -1,0 +1,14 @@
+uuid: 683a7c36-1093-49a2-82bb-61696e051298
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.teammate
+  module:
+    - user
+id: user_remove_role_action.teammate
+label: 'Remove the Teammate role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: teammate

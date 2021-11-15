@@ -1,0 +1,28 @@
+uuid: 1ee41f51-8490-457a-a4f2-3d4762d14547
+langcode: en
+status: true
+dependencies:
+  module:
+    - mobile_detect
+    - system
+  theme:
+    - exam
+id: sitebranding
+theme: exam
+region: footer_first
+weight: -11
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility:
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    devices: {  }
+    negate: null

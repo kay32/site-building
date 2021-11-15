@@ -1,0 +1,39 @@
+uuid: dec22f56-84d7-4f9f-88b4-e41e2a623cab
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c8cac7cc-72bb-4487-94f0-73e1e45cc678'
+  module:
+    - block_class
+    - block_content
+    - mobile_detect
+    - system
+  theme:
+    - exam
+third_party_settings:
+  block_class:
+    classes: container
+id: about
+theme: exam
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:c8cac7cc-72bb-4487-94f0-73e1e45cc678'
+settings:
+  id: 'block_content:c8cac7cc-72bb-4487-94f0-73e1e45cc678'
+  label: About
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    devices: {  }
+    negate: null
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

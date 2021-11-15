@@ -1,0 +1,38 @@
+uuid: 94c780af-4405-4578-a994-fd0ef2b7abe2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.our_team
+  module:
+    - block_class
+    - mobile_detect
+    - system
+    - views
+  theme:
+    - exam
+third_party_settings:
+  block_class:
+    classes: 'container block-our-team'
+id: views_block__our_team_block_1
+theme: exam
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:our_team-block_1'
+settings:
+  id: 'views_block:our_team-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    devices: {  }
+    negate: null
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

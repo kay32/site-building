@@ -1,0 +1,33 @@
+uuid: c567a510-46bb-4a42-ad05-db7d4f130114
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.our_team
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - exam
+third_party_settings:
+  block_class:
+    classes: block-our-team
+id: views_block__our_team_block_1
+theme: exam
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:our_team-block_1'
+settings:
+  id: 'views_block:our_team-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

@@ -1,0 +1,33 @@
+uuid: 7fdc9d85-f270-443c-91fc-aef901e04e30
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.clients
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - exam
+third_party_settings:
+  block_class:
+    classes: block-clients
+id: views_block__clients_block_1
+theme: exam
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:clients-block_1'
+settings:
+  id: 'views_block:clients-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

@@ -1,0 +1,24 @@
+uuid: 335bee87-1396-4454-a5ae-7e8b03841719
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - exam
+id: pagetitle
+theme: exam
+region: content
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true

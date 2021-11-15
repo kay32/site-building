@@ -1,0 +1,53 @@
+.form-contact {
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-item-your-message {
+    flex-grow: 1;
+
+    .form-textarea-wrapper, textarea {
+      height: 100%;
+    }
+
+    textarea {
+      resize: none;
+    }
+  }
+
+  .form-submit {
+    font-weight: bold;
+    background-color: $submit;
+    border-color: lighten($submit, 20%);
+  }
+
+  @include media-breakpoint-up(md)
+  {
+    .form-control {
+      padding: 25px 10px;
+    }
+
+    .form-submit {
+      min-width: 190px;
+      padding: 15px 10px;
+    }
+  }
+
+  &__right {
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      margin-bottom: 5px;
+    }
+    a {
+      color: inherit;
+    }
+  }
+}

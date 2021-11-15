@@ -1,0 +1,13 @@
+.block-clients {
+  .slick {
+    .slick-track {
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+}
